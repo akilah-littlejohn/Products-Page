@@ -6,5 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./add-product.component.css']
 })
 export class AddProductComponent {
+  formFields = [
+    "Title",
+    "Price",
+    "Description",
+    "Category",
+    "Image"
+  ]
 
 }

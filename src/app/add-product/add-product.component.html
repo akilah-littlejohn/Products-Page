@@ -1,1 +1,8 @@
-<p>add-product works!</p>
+<h1>Add Product</h1>
+<form #form="ngForm" >
+    <mat-form-field appearance="fill" *ngFor="let formfield of formFields">
+        <mat-label>{{formfield}}</mat-label>
+        <input matInput type="text" name="" id="" required>
+    </mat-form-field>
+    <button mat-raised-button color="accent">Submit</button>
+</form>
