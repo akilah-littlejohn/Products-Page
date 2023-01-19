@@ -4,12 +4,14 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HttpClientModule } from '@angular/common/http';
 import { AppComponent } from './app.component';
 import { ProductsComponent } from './products/products.component';
+import { AddProductComponent } from './add-product/add-product.component';
 
 
 @NgModule({
   declarations: [
     AppComponent,
-    ProductsComponent
+    ProductsComponent,
+    AddProductComponent
   ],
   imports: [
     BrowserModule,
