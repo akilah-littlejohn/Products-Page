@@ -7,14 +7,20 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FakeStoreDataService {
-  storeurl: string = `https://fakestoreapi.com/products`;
+  storeurl: string = `https://fakestoreapi.com/`;
+  products:string = `${'products'}`
+  categories:string =`${'categories'}`
+  
 
 
   constructor(private http: HttpClient) { }
-  getStoreData() {
-    return this.http.get(this.storeurl)
+  getStoreProductsData() {
+    return this.http.get(`${this.storeurl}${this.products}`)
   }
+getAllcatergories(){
+  return this.http.get(`${this.storeurl}${this.products}/${this.categories}`)
 
+}
 
 
 }

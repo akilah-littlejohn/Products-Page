@@ -1,0 +1,15 @@
+nav {
+display: flex;
+justify-content: center;
+background-color: #eee;
+margin: 1em;
+}
+
+li {
+    list-style: none;
+    background-color:lightgrey;
+    border-radius: 25px;
+   
+    padding: 10px;
+    font-weight: bold;
+}
