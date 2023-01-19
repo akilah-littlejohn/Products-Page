@@ -1,1 +1,4 @@
-<p>products works!</p>
+<h1>Products List</h1>
+<section *ngFor="let product of products">
+    <p>{{product.title}}, {{ product.price}}</p>
+</section>
