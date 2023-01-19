@@ -1,4 +1,6 @@
 import { Component } from '@angular/core';
+import { NgForm } from '@angular/forms'
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-add-product',
@@ -13,5 +15,10 @@ export class AddProductComponent {
     "Category",
     "Image"
   ]
-
+  constructor(private router:Router){}
+  add_products(form:NgForm){
+    if (form.valid){
+      this.router.navigate(['/products']);
+    }
+  }
 }
