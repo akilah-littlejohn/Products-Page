@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { HttpClient } from '@angular/common/http';
+import { HttpClient, HttpHeaders  } from '@angular/common/http';
 import { Observable } from 'rxjs';
 
 
@@ -7,6 +7,11 @@ import { Observable } from 'rxjs';
   providedIn: 'root'
 })
 export class FakeStoreDataService {
+   httpOptions = {
+    headers: new HttpHeaders({
+      'Access-Control-Allow-Origin': 'https://fakestoreapi.com/'
+    })
+  };
   storeurl: string = `https://fakestoreapi.com/`;
   products:string = `${'products'}`
   categories:string =`${'categories'}`

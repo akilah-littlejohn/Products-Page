@@ -16,7 +16,7 @@ export class CategoryListComponent implements OnInit {
   ngOnInit(): void {
     this.storeData.getAllcatergories().subscribe(
       (data) => {
-        this.categories = data
+        this.categories = data;
         console.log(data)
       }
     )
